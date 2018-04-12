@@ -1,5 +1,6 @@
     
       <?php
+      session_start();
     require_once 'user.php';
     
     $username = "";
@@ -7,7 +8,7 @@
     $password = "";
     
     $email = "";
-    $ONmae="";
+    $onmae="";
     $mobile="";
     if(isset($_POST['username'])){
         
@@ -26,9 +27,9 @@
         $email = $_POST['email'];
         
     }
-    if(isset($_POST['OName'])){
+    if(isset($_POST['oname'])){
         
-        $OName = $_POST['OName'];
+        $oname = $_POST['oname'];
         
     }
     if(isset($_POST['mobile'])){
@@ -46,14 +47,14 @@
         
         $hashed_password = md5($password);
         
-        $json_registration = $userObject->createNewRegisterUser($username, $hashed_password, $email,"$ONama ","$mobile");
+        $json_registration = $userObject->createNewRegisterUser($username, $hashed_password, $email,"$oname ","$mobile");
         
         echo json_encode($json_registration);
       
     }
-    
+   // $_SESSION['username']='elisa';
     // Login
-    
+    $_SESSION['username']='elisa';
     if(!empty($username) && !empty($password) && empty($email)){
         
         $hashed_password = md5($password);
@@ -61,5 +62,6 @@
         $json_array = $userObject->loginUsers($username, $hashed_password);
         
         echo json_encode($json_array);
+        
     }
     
