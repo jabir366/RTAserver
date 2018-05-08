@@ -9,13 +9,54 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Home</title>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: black;
+    color: white;
+}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+
+
+</style>
+    
         
 </head>
     
     <body>
-        <div class ="header" align = "center">
-            <h1>Realtime Trafic Analyzer</h1>
-            
+        <div class ="container">
+        <header>
+        
+            <h1>Realtime Traffic Analyzer</h1>
+            </header>
         </div>
         
         <div Align ="right">
@@ -46,42 +87,21 @@ and open the template in the editor.
             <div id ="centered" style="float:right; width:80%;">
         
             <center>
-                <img src="jam1.jpeg" alt="Avatar" class="image">
+                <img src="jamgood_1.jpg" alt="Avatar" class="image">
             </center>
             
 </div>
         </div>
         
           
-      
+        <div class="vertical-menu" id = "centered" style="width: 264px;float:left;width: 20%">
+            <a href="Home.php" accesskey="1"class="active">Home</a>
+            <a href="activeusers.php"accesskey="2">Active Users</a>
+            <a href="trafficdetails.php"accesskey="3">Traffic Details</a>
+            <a href="routes.php"accesskey="4">Routes</a>
+            <a href="aboutus.php"accesskey="5">About US</a>
+</div>
      
-         <div id ="centered" style="background-color: burlywood; width:264px;float:left; width:20%;">
-        <br>
-         
-        <ul class = "nav">
-                    
-                    <br>
-                    
-                    <br> 
-                    <br>
-         
-                    <li><a href="activeusers.php"accesskey="1">Active Users</a></li>
-                    <br>
-                    <li><a href = "trafficdetails.php"accesskey="2">Traffic Details</a></li>
-                    <br>
-                    <li><a href = "routes.php"accesskey="3">Routes</a></li>
-                    <br>
-                    <li><a href = "aboutus.php"accesskey="5">ABOUT US</a></li>
-                    
-                     <br>
-                    <br> 
-                    <br>
-                </ul>
-                <br>
-   
-    
-    </div>
-    </div>
         <br>
         <br>
     

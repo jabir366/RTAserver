@@ -9,12 +9,55 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>About US</title>
         <link href="style.css" rel="stylesheet" type="text/css">
+<style>
+    .vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: black;
+    color: white;
+}
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+
+
+</style>
+    
         
-    </head>
+</head>
+    
     <body>
-        <div class ="header" align = "center">
-            <h1>Realtime Trafic Analyzer</h1>
+        <div class ="container">
+        <header>
+        
+            <h1>Realtime Traffic Analyzer</h1>
+            </header>
         </div>
+        
         
         
         <div Align ="right">
@@ -38,8 +81,7 @@ and open the template in the editor.
 <br>
          &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
          &nbsp; <a href="Login.php"><img src="index.jpeg" width="50" height="50"  alt="Flower" align = "right"></a>
-        <br>
-        <br>
+        
 <div align = "left">
             <img src="aboutus.png" width ="140" height="140" />
         </div>
@@ -59,39 +101,20 @@ and open the template in the editor.
             
 </div>
         </div>
-        <div id ="centered" style="background-color: burlywood; width:264px;float:left; width:20%;">
+          
+        <div class="vertical-menu" id = "centered" style="width: 264px;float:left;width: 20%">
+            <a href="Home.php" accesskey="1">Home</a>
+            <a href="activeusers.php"accesskey="2">Active Users</a>
+            <a href="trafficdetails.php"accesskey="3">Traffic Details</a>
+            <a href="routes.php"accesskey="4">Routes</a>
+            <a href="aboutus.php"accesskey="5"class="active">About US</a>
+            <br>
         <br>
-         
-        <ul class = "nav">
-                    
-                    <br>
-                    
-                    <br> 
-                    <br>
-                    <li><a href = "Home.php" accesskey="1">Home</a></li>
-                    <br>
-                    <li><a href="activeusers.php"accesskey="2">Active Users</a></li>
-                    <br>
-                    <li><a href = "trafficdetails.php"accesskey="3">Traffic Details</a></li>
-                    <br>
-                    <li><a href = "routes.php"accesskey="4">Routes</a></li>
-                    
-                    
-                     <br>
-                    <br> 
-                    
-                </ul>
-                <br>
-   
-    
-    </div>
-        
-       
-        <?php
-        // put your code here
+        <br>
+</div>
         
         
-        ?>
+     
         
         <div style="font-style: italic" style = "font-family:courier" align = "center">
             <center>

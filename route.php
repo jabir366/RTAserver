@@ -1,6 +1,6 @@
  
            <?php   
-           session_start();
+           ///session_start();
            $connect = mysqli_connect("localhost", "root", "jabir123", "rtanalyzer");  
              
            $type="";
@@ -68,7 +68,7 @@
 
                // $sql =" INSERT INTO `journey_details`(`user_id`, `s_date`, `route_id`, `source`, `destination`) VALUES (3,NOW(),1,'$source','$destination')";
                //$sql="INSERT INTO `journey_details`(`user_id`,`s_date`, `s_time`, `route_id`, `source`, `destination`,`duration`) VALUES ('$id','$start_date','$start_time','$source','$destination,'$duration')";
-               $sql="INSERT INTO `journey_details`(`user_id`,`s_date`, `s_time`, `route_id`, `source`, `destination`,`duration`) VALUES ('$id','$start_date','$start_time','$selected_route','$source','$destination','$duration')";
+               $sql="INSERT INTO `journey_details`(`user_id`,`s_date`, `s_time`, `route_id`, `source`, `destination`,`duration`,`status`) VALUES ('$id','$start_date','$start_time','$selected_route','$source','$destination','$duration','active')";
              // $sql="INSERT INTO `journey_details`(`user_id`,`s_date`, `s_time`, `route_id`, `source`, `destination`,`duration`) VALUES ('3','2018-4-9','6:21','3','mmmmm','kottayam','2')";
                 $result = mysqli_query($connect, $sql);
                if($result)

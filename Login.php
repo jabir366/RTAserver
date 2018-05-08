@@ -9,13 +9,29 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Login Form</title>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+        </style>
     </head>
     <body>
-        <div class ="header" align = "center">
-            <h1>Realtime Trafic Analyzer</h1>
-            
-        </div>
+       <div class ="container">
+        <header>
         
+            <h1>Realtime Traffic Analyzer</h1>
+            </header>
+        </div> 
         <div Align ="right">
             <table border="0">
                 <thead>
@@ -81,7 +97,7 @@ and open the template in the editor.
         </div>
         <?php
         // put your code here
-$con= mysqli_connect("localhost","root","santhosh","rtanalyzer");
+$con= mysqli_connect("localhost","root","jabir123","rtanalyzer");
         
        // if($con) echo working;
         if(mysqli_errno($con)) 
